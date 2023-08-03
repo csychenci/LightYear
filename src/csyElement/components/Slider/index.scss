@@ -1,0 +1,18 @@
+.toggle-slider {
+  width: 350px;
+  height: 4px;
+  background-color: #eee;
+  border-radius: 4px;
+  position: relative;
+  margin: 30px;
+  .slider {
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: blue;
+    top: -4px;
+    left: 0px;
+  }
+}

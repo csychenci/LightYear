@@ -1,0 +1,41 @@
+.stack-context {
+  .compare__content__4 {
+    z-index: 0;
+    background-color: orange;
+  }
+  .compare__content__5{
+    z-index: 0;
+    background-color: aqua;
+  }
+  .compare__content__6{
+    background-color: aqua;
+  }
+  div.compare__content__7{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    >p {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 0px;
+      left: 0px;
+    }
+    >p.box1 {
+      z-index: 1;
+      background-color: blue;
+    }
+    >p.box2{
+      z-index: 2;
+      background-color: red;
+      top: 20px;
+      left: 20px;
+    }
+    >p.box3{
+      z-index: 99;
+      background-color: green;
+      top: 30px;
+      left: 30px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.drag__container {
+  width: 100%;
+	height: 300px;
+	position: relative;
+	border: 1px solid skyblue;
+	box-sizing: border-box;
+	.drag__rect {
+		width: 30px;
+		height: 30px;
+		background-color: rosybrown;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		cursor: pointer;
+	}
+}

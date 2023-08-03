@@ -1,0 +1,19 @@
+.canvas-draw {
+    display: flex;
+
+    .rect-btn {
+        width: 60px;
+        height: 28px;
+        margin-right: 5px;
+        white-space: nowrap;
+        padding: 2px 4px;
+        border: 0px;
+        cursor: pointer;
+    }
+
+    .canvas {
+        background-color: antiquewhite;
+        border-radius: 20px;
+        margin: 20px;
+    }
+}

@@ -1,0 +1,30 @@
+.stack-context {
+  .block__content {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    text-align: right;
+    margin-top: -20px;
+  }
+  .block__content__2 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-top: -150px;
+  }
+  .inline__block__content {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+  .inline__content {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-left: -50px;
+  }
+}

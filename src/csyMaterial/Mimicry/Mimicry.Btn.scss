@@ -1,0 +1,53 @@
+.mimicry-btn-container {
+	display: flex;
+	/* ��һ���е�Ԫ��ƽ��������� */
+	justify-content: space-around;
+	align-items: center;
+	/* Ԫ����һ�зŲ���ʱ�Զ����� */
+	flex-wrap: wrap;
+	width: 700px;
+	height: 600px;
+  .mimicry-btn-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* ��Ԫ�ش�ֱ���� ��������ð���ͼƬ��div�����ִ�ֱ���� */
+    flex-direction: column;
+    width: 100px;
+    height: 140px;
+    margin: 20px;
+    /* ������ȥ���С�� */
+    cursor: pointer;
+    .mimicry-btn-img {
+      /* ������ͼƬ�ں����ﴹֱ+ˮƽ���� */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      /* Բ������ */
+      border-radius: 20px;
+      /* ������Ӱ */
+      box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2),
+        -18px -18px 30px rgba(255, 255, 255, 1);
+      /* ����ʱ�� ease-out��ָ�ȿ��� ������ */
+      transition: all 0.2s ease-out;
+      :hover {
+        /* inset ���ڲ���Ӱ Ĭ�����ⲿ��Ӱoutset */
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 rgba(255, 255, 255, 0.8),
+          inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+          inset -18px -18px 30px rgba(255, 255, 255, 1);
+          img{
+            width: 58px;
+          }
+      }
+      img {
+        width: 60px;
+        transition: all 0.2s ease-out;
+      }
+    }
+    p {
+      color: slategrey;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import (reference) '../style/variables.less';
+
+.@{prefix}-example-wrapper {
+  height: calc(100vh - @s-nav-height - 2px);
+  padding-top: 16px;
+
+  @media @mobile {
+    padding-top: 16px;
+  }
+
+  &-toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    color: @c-heading;
+    font-weight: 500;
+    font-size: 16px;
+    border-bottom: 1px solid @c-border;
+
+    button,
+    a {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin: 6px 0 6px 12px;
+      font-weight: 400;
+      vertical-align: middle;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+
+      &:first-child {
+        background-position-x: -144px;
+      }
+
+      &:nth-child(2) {
+        background-position-x: -126px;
+      }
+    }
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 100%;
+    border: 0;
+  }
+}
