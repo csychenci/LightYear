@@ -14,7 +14,7 @@ export default defineConfig({
     sassOptions: {},
   },
   devServer: {
-    port: 3000
+    port: 3000,
   },
   dynamicImport: {},
   exportStatic: {},
@@ -24,11 +24,8 @@ export default defineConfig({
   //   path: "/stylesheets/layout",
   //   access: false
   // }] as IRoute[],
-  workerLoader: {
-
-  },
-  favicon:
-    '/image/fav.png',
+  workerLoader: {},
+  favicon: '/image/fav.png',
   logo: '/image/fav.png',
   // more config: https://d.umijs.org/config
   navs: [
@@ -44,7 +41,7 @@ export default defineConfig({
       path: '/extendweb',
     },
     {
-      title:'随笔',
+      title: '随笔',
       isRootNav: true,
       path: '/vlog',
     },
@@ -62,6 +59,14 @@ export default defineConfig({
         //   title: 'JavaScript进阶',
         //   path: '/level',
         // },
+        {
+          title: 'neo4j',
+          path: '/neo4j',
+        },
+        {
+          title: 'D3',
+          path: '/d3',
+        },
         {
           title: 'NodeJs',
           path: '/nodejs',
@@ -135,14 +140,14 @@ export default defineConfig({
           path: '/webpack',
         },
         {
-          title:'可视化',
-          path:'/visualization'
+          title: '可视化',
+          path: '/visualization',
         },
         {
-          title:'WebGPU',
-          path:'/webgpu'
-        }
+          title: 'WebGPU',
+          path: '/webgpu',
+        },
       ],
     },
-  ]
+  ],
 });
