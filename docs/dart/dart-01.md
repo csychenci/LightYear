@@ -56,3 +56,66 @@ print(double); // 3.0
 |compareTo(num param)|数字比较|
 |gcd(num param)|返回最大公约数|
 |toStringAsExponential(int param)|科学记数法|
+|isNaN|作为数字类型的一个属性存在，判断数字是否是 NaN|
+|isFinite|作为数字类型的一个属性存在，判断数字是否是有穷的|
+
+4. 字符串/String
+- 可以用单引号、双引号、三个引号(可以包含换行符)来声明字符串，还可以使用正则表达式来匹配一个字符串
+
+```dart
+const reg = RegExp(r'\d+');
+reg.hasMatch("1234"); // true
+```
+
+- 通过 String 来声明一个字符串变量，多行字符串时，引号必须成对出现
+
+```dart
+String str1 = "hello world";
+String str2 = '''hello,
+welcome''';
+
+// 使用加号进行字符串拼接ß
+String str3 = str1 + str2;
+
+// 模版字符串代替变量
+print("$str1,$str2");
+```
+
+- 字符串还有一些常见的 api
+
+|api|描述|
+|---|---|
+|split(String param)|基于 param 进行字符串分割|
+|trim()|去掉字符串内的所有空格|
+|trimLeft()/trimRight()|去掉字符串左边/右边的空格|
+|isEmpty|字符串的一个属性(不是方法)，判断字符串是否为空，返回一个 bool|
+|isNotEmpty|也是字符串的一个属性(不是方法)，判断字符串是否不为为空，返回一个 bool|
+|replaceAll(String from,String replace)|将字符串内所有的 from 全量替换成 replace|
+|replaceAll(RegExp from,String replace)|将字符串内所有的被正则 from 匹配到的内容全量替换成 replace|
+|contains(String param)|查找 param 是否包含在字符串中|
+|indexOf(String param)/lastIndexOf(String param)|查找 param 在字符串中的位置，不存在则返回 -1|
+
+```dart
+String str = "h1j2k3l4";
+print(str.replaceAll(RegExp(r"\d+"),'_'));
+//h_j_k_l_
+```
+
+5. 布尔类型/Boolean
+- dart 通过 bool 关键字来表示布尔类型，布尔类型只有两个值：true 和 false。对变量进行判断时，要显式地检查布尔值
+
+```js
+if(bool) {
+
+}
+```
+
+```dart
+if(bool1 === 0) {
+
+}
+
+if(bool2 === null) {
+
+}
+```
