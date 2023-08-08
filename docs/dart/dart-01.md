@@ -119,3 +119,16 @@ if(bool2 === null) {
 
 }
 ```
+
+6. List
+- 是 dart 的数组，它有两种声明方式，一种是不限制元素的数据类型，另一种限制元素的数据类型
+
+```dart
+// 字面量方式
+List list1 = [1,'a'];
+
+List list2 = <int>[1,2,3,4];
+
+// 构造函数声明
+List list3 = new List.empty(); // 如果不设置 growable 为 true，list3无法添加新元素 (new List.empty(growable:true))
+```
