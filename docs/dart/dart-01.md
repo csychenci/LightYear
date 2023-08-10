@@ -132,3 +132,8 @@ List list2 = <int>[1,2,3,4];
 // 构造函数声明
 List list3 = new List.empty(); // 如果不设置 growable 为 true，list3无法添加新元素 (new List.empty(growable:true))
 ```
+
+|api|描述|
+|---|---|
+|filled(int length,fill)|向列表中国呢填充元素，length 为长度，fill 为元素|
+|
